@@ -8,59 +8,59 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="Calc_Panel" prefHeight="325.0" prefWidth="230.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="Calc_Panel" prefHeight="325.0" prefWidth="230.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
         <TextArea fx:id="text_area" layoutX="15.0" layoutY="14.0" prefHeight="60.0" prefWidth="200.0">
             <font>
                 <Font size="20.0" />
             </font>
         </TextArea>
-        <Button fx:id="btn_0" layoutX="61.0" layoutY="271.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="0" textAlignment="CENTER">
+        <Button fx:id="btn_0" layoutX="61.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="0" textAlignment="CENTER">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_1" layoutX="14.0" layoutY="224.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="1">
+        <Button fx:id="btn_1" layoutX="14.0" layoutY="224.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="1">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_2" layoutX="61.0" layoutY="224.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="2">
+        <Button fx:id="btn_2" layoutX="61.0" layoutY="224.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="2">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_3" layoutX="109.0" layoutY="224.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="3">
+        <Button fx:id="btn_3" layoutX="109.0" layoutY="224.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="3">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_4" layoutX="14.0" layoutY="178.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="4">
+        <Button fx:id="btn_4" layoutX="14.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="4">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_5" layoutX="61.0" layoutY="178.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="5">
+        <Button fx:id="btn_5" layoutX="61.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="5">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_6" layoutX="109.0" layoutY="178.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="6">
+        <Button fx:id="btn_6" layoutX="109.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="6">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_7" layoutX="15.0" layoutY="131.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="7">
+        <Button fx:id="btn_7" layoutX="15.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="7">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_8" layoutX="61.0" layoutY="131.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="8">
+        <Button fx:id="btn_8" layoutX="61.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="8">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_9" layoutX="109.0" layoutY="131.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="9">
+        <Button fx:id="btn_9" layoutX="109.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="9">
             <font>
                 <Font size="20.0" />
             </font>
