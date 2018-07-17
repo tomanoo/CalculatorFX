@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="325.0" prefWidth="230.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TextArea layoutX="15.0" layoutY="14.0" prefHeight="60.0" prefWidth="200.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextArea>
+        <Button layoutX="61.0" layoutY="271.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="0" textAlignment="CENTER">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="14.0" layoutY="224.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="1">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="61.0" layoutY="224.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="2">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="109.0" layoutY="224.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="3">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="14.0" layoutY="178.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="4">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="61.0" layoutY="178.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="5">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="109.0" layoutY="178.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="6">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="15.0" layoutY="131.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="7">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="61.0" layoutY="131.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="8">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="109.0" layoutY="131.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="9">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="14.0" layoutY="271.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text=".">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="109.0" layoutY="271.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="=">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="175.0" layoutY="131.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="+">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="175.0" layoutY="178.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="-">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="175.0" layoutY="224.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="*">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="175.0" layoutY="271.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="/">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="175.0" layoutY="86.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0" text="C">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="129.0" layoutY="86.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0" text="CE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
