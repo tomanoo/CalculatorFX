@@ -15,52 +15,52 @@
                 <Font size="20.0" />
             </font>
         </TextArea>
-        <Button fx:id="btn_0" layoutX="61.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="0" textAlignment="CENTER">
+        <Button fx:id="btn_0" layoutX="61.0" layoutY="271.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="0" textAlignment="CENTER">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_1" layoutX="14.0" layoutY="224.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="1">
+        <Button fx:id="btn_1" layoutX="14.0" layoutY="224.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="1">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_2" layoutX="61.0" layoutY="224.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="2">
+        <Button fx:id="btn_2" layoutX="61.0" layoutY="224.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="2">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_3" layoutX="109.0" layoutY="224.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="3">
+        <Button fx:id="btn_3" layoutX="109.0" layoutY="224.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="3">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_4" layoutX="14.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="4">
+        <Button fx:id="btn_4" layoutX="14.0" layoutY="178.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="4">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_5" layoutX="61.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="5">
+        <Button fx:id="btn_5" layoutX="61.0" layoutY="178.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="5">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_6" layoutX="109.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="6">
+        <Button fx:id="btn_6" layoutX="109.0" layoutY="178.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="6">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_7" layoutX="15.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="7">
+        <Button fx:id="btn_7" layoutX="15.0" layoutY="131.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="7">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_8" layoutX="61.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="8">
+        <Button fx:id="btn_8" layoutX="61.0" layoutY="131.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="8">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_9" layoutX="109.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="9">
+        <Button fx:id="btn_9" layoutX="109.0" layoutY="131.0" mnemonicParsing="false" onAction="#numberClicked" prefHeight="40.0" prefWidth="40.0" text="9">
             <font>
                 <Font size="20.0" />
             </font>
@@ -70,27 +70,27 @@
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_equal" layoutX="109.0" layoutY="271.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="=">
+        <Button fx:id="btn_equal" layoutX="109.0" layoutY="271.0" mnemonicParsing="false" onAction="#calculate" prefHeight="40.0" prefWidth="40.0" text="=">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_add" layoutX="175.0" layoutY="131.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="+">
+        <Button fx:id="btn_add" layoutX="175.0" layoutY="131.0" mnemonicParsing="false" onAction="#signClicked" prefHeight="40.0" prefWidth="40.0" text="+">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_sub" layoutX="175.0" layoutY="178.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="-">
+        <Button fx:id="btn_sub" layoutX="175.0" layoutY="178.0" mnemonicParsing="false" onAction="#signClicked" prefHeight="40.0" prefWidth="40.0" text="-">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_multi" layoutX="175.0" layoutY="224.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="*">
+        <Button fx:id="btn_multi" layoutX="175.0" layoutY="224.0" mnemonicParsing="false" onAction="#signClicked" prefHeight="40.0" prefWidth="40.0" text="*">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_div" layoutX="175.0" layoutY="271.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="/">
+        <Button fx:id="btn_div" layoutX="175.0" layoutY="271.0" mnemonicParsing="false" onAction="#signClicked" prefHeight="40.0" prefWidth="40.0" text="/">
             <font>
                 <Font size="20.0" />
             </font>
