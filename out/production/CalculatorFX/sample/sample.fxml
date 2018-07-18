@@ -95,12 +95,12 @@
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_c" layoutX="175.0" layoutY="86.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0" text="C">
+        <Button fx:id="btn_c" layoutX="175.0" layoutY="86.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="30.0" prefWidth="40.0" text="C">
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
-        <Button fx:id="btn_ce" layoutX="129.0" layoutY="86.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="40.0" text="CE">
+        <Button fx:id="btn_ce" layoutX="129.0" layoutY="86.0" mnemonicParsing="false" onAction="#clearEnter" prefHeight="30.0" prefWidth="40.0" text="CE">
             <font>
                 <Font size="14.0" />
             </font>

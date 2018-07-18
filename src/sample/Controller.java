@@ -2,9 +2,13 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.Dialog;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.AnchorPane;
+
+import javax.swing.*;
 
 public class Controller {
 
@@ -29,8 +33,20 @@ public class Controller {
         text_area.clear();
         Button b = (Button) event.getSource();
         sign = b.getText();
-        System.out.println(sign);
         isSign = true;
+    }
+
+    @FXML
+    public void clearEnter(){
+
+    }
+
+    @FXML
+    public void clearAll(){
+        value1 = value2 = result = 0;
+        sign = "";
+        isSign = false;
+        text_area.clear();
     }
 
     @FXML
@@ -47,7 +63,16 @@ public class Controller {
                 result = value1 * value2;
                 break;
             case "/":
-                result = value1 / value2;
+                if(value2 != 0)
+                    result = value1 / value2;
+                else {
+                    clearAll();
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setHeaderText(null);
+                    alert.setContentText("You cannot divide by 0!\nTry again.");
+                    alert.show();
+                    return;
+                }
                 break;
         }
         text_area.setText(Integer.toString(result));
