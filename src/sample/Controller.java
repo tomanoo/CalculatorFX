@@ -12,7 +12,7 @@ import javax.swing.*;
 
 public class Controller {
 
-    private Long value1, value2, result;
+    private double value1, value2, result;
     private String sign;
     private boolean isSign = false;
 
@@ -21,6 +21,8 @@ public class Controller {
     @FXML
     private AnchorPane Calc_Panel = new AnchorPane();
 
+    private String getText = text_area.getText();
+
     @FXML
     public void numberClicked(ActionEvent event){
         Button b = (Button) event.getSource();
@@ -28,12 +30,16 @@ public class Controller {
     }
 
     @FXML
-    public void signClicked(ActionEvent event){
-        value1 = Long.parseLong(text_area.getText());
-        text_area.clear();
-        Button b = (Button) event.getSource();
-        sign = b.getText();
-        isSign = true;
+    public void signClicked(ActionEvent event) {
+        if(!isSign) {
+            if(getText!= null && getText != "" && getText != "-" && getText != "0." && getText !="-0.") {
+                value1 = Double.parseDouble(text_area.getText());
+                text_area.clear();
+                Button b = (Button) event.getSource();
+                sign = b.getText();
+                isSign = true;
+            }
+        }
     }
 
     @FXML
@@ -43,7 +49,7 @@ public class Controller {
 
     @FXML
     public void clearAll(){
-        value1 = value2 = result = 0L;
+        value1 = value2 = result = 0;
         sign = "";
         isSign = false;
         text_area.clear();
@@ -51,33 +57,36 @@ public class Controller {
 
     @FXML
     public void calculate(){
-        value2 = Long.parseLong(text_area.getText());
-        switch(sign){
-            case "+":
-                result = value1 + value2;
-                break;
-            case "-":
-                result = value1 - value2;
-                break;
-            case "*":
-                result = value1 * value2;
-                break;
-            case "/":
-                if(value2 != 0)
-                    result = value1 / value2;
-                else {
-                    clearAll();
-                    Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setHeaderText(null);
-                    alert.setContentText("You cannot divide by 0!\nTry again.");
-                    alert.show();
-                    return;
-                }
-                break;
+        if(getText != null && getText != "" && getText != "-" && getText != "0." && getText !="-0."){
+            value2 = Double.parseDouble(text_area.getText());
+            switch (sign) {
+                case "+":
+                    result = value1 + value2;
+                    break;
+                case "-":
+                    result = value1 - value2;
+                    break;
+                case "*":
+                    result = value1 * value2;
+                    break;
+                case "/":
+                    if (value2 != 0)
+                        result = value1 / value2;
+                    else {
+                        clearAll();
+                        Alert alert = new Alert(Alert.AlertType.ERROR);
+                        alert.setHeaderText(null);
+                        alert.setContentText("You cannot divide by 0!\nTry again.");
+                        alert.show();
+                        return;
+                    }
+                    break;
+            }
+            text_area.setText(Double.toString(result));
         }
-        text_area.setText(Long.toString(result));
+        System.out.println(result);
         isSign = false;
-        value2 = 0L;
+        value2 = 0;
     }
 
 }
