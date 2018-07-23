@@ -12,7 +12,7 @@ import javax.swing.*;
 
 public class Controller {
 
-    private int value1, value2, result;
+    private Long value1, value2, result;
     private String sign;
     private boolean isSign = false;
 
@@ -29,7 +29,7 @@ public class Controller {
 
     @FXML
     public void signClicked(ActionEvent event){
-        value1 = Integer.parseInt(text_area.getText());
+        value1 = Long.parseLong(text_area.getText());
         text_area.clear();
         Button b = (Button) event.getSource();
         sign = b.getText();
@@ -43,7 +43,7 @@ public class Controller {
 
     @FXML
     public void clearAll(){
-        value1 = value2 = result = 0;
+        value1 = value2 = result = 0L;
         sign = "";
         isSign = false;
         text_area.clear();
@@ -51,7 +51,7 @@ public class Controller {
 
     @FXML
     public void calculate(){
-        value2 = Integer.parseInt(text_area.getText());
+        value2 = Long.parseLong(text_area.getText());
         switch(sign){
             case "+":
                 result = value1 + value2;
@@ -75,9 +75,9 @@ public class Controller {
                 }
                 break;
         }
-        text_area.setText(Integer.toString(result));
+        text_area.setText(Long.toString(result));
         isSign = false;
-        value2 = 0;
+        value2 = 0L;
     }
 
 }
