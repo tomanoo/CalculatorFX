@@ -14,7 +14,11 @@ public class Controller {
 
     private double value1, value2, result;
     private String sign;
-    private boolean isSign = false;
+    private boolean comma = false,      //is there already a comma (dot/point) in a value
+            isSign = false,             //has the "sign" been chosen
+            isFirstValueSet = false,    //as it states
+            minus = false,              //is there already a minus in front of first value
+            isResult = false;           //has the "=" sign been pressed
 
     @FXML
     private TextArea text_area = new TextArea();
@@ -26,7 +30,17 @@ public class Controller {
     @FXML
     public void numberClicked(ActionEvent event){
         Button b = (Button) event.getSource();
-        text_area.appendText(b.getText());
+        String x = b.getText();
+        if (x == "." && !comma){
+            if (text_area.getText() == "") {
+                text_area.appendText("0" + x);
+            }
+            else{
+                text_area.appendText(x);
+            }
+        }
+        else if (x.matches("[0-9]"))
+            text_area.appendText(x);
     }
 
     @FXML

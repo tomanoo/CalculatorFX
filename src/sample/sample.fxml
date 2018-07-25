@@ -65,7 +65,7 @@
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_dot" layoutX="15.0" layoutY="272.5" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text=".">
+        <Button fx:id="btn_dot" layoutX="15.0" layoutY="272.5" mnemonicParsing="false" onAction="#numberClicked" prefHeight="40.0" prefWidth="40.0" text=".">
             <font>
                 <Font size="20.0" />
             </font>
