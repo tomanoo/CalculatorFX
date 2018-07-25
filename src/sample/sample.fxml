@@ -8,9 +8,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="Calc_Panel" prefHeight="325.0" prefWidth="230.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane fx:id="Calc_Panel" prefHeight="325.0" prefWidth="211.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
-        <TextArea fx:id="text_area" layoutX="15.0" layoutY="14.0" prefHeight="60.0" prefWidth="200.0">
+        <TextArea fx:id="text_area" layoutX="15.0" layoutY="14.0" prefHeight="60.0" prefWidth="181.0">
             <font>
                 <Font size="20.0" />
             </font>
@@ -75,32 +75,32 @@
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_add" layoutX="175.0" layoutY="131.0" mnemonicParsing="false" onAction="#signClicked" prefHeight="40.0" prefWidth="40.0" text="+">
+        <Button fx:id="btn_add" layoutX="154.0" layoutY="130.0" mnemonicParsing="false" onAction="#signClicked" prefHeight="40.0" prefWidth="40.0" text="+">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_sub" layoutX="175.0" layoutY="178.0" mnemonicParsing="false" onAction="#signClicked" prefHeight="40.0" prefWidth="40.0" text="-">
+        <Button fx:id="btn_sub" layoutX="154.0" layoutY="177.0" mnemonicParsing="false" onAction="#signClicked" prefHeight="40.0" prefWidth="40.0" text="-">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_multi" layoutX="175.0" layoutY="224.0" mnemonicParsing="false" onAction="#signClicked" prefHeight="40.0" prefWidth="40.0" text="*">
+        <Button fx:id="btn_multi" layoutX="154.0" layoutY="223.0" mnemonicParsing="false" onAction="#signClicked" prefHeight="40.0" prefWidth="40.0" text="*">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_div" layoutX="175.0" layoutY="271.0" mnemonicParsing="false" onAction="#signClicked" prefHeight="40.0" prefWidth="40.0" text="/">
+        <Button fx:id="btn_div" layoutX="154.0" layoutY="270.0" mnemonicParsing="false" onAction="#signClicked" prefHeight="40.0" prefWidth="40.0" text="/">
             <font>
                 <Font size="20.0" />
             </font>
         </Button>
-        <Button fx:id="btn_c" layoutX="175.0" layoutY="86.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="30.0" prefWidth="40.0" text="C">
+        <Button fx:id="btn_c" layoutX="157.0" layoutY="85.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="30.0" prefWidth="40.0" text="C">
             <font>
                 <Font size="14.0" />
             </font>
         </Button>
-        <Button fx:id="btn_ce" layoutX="129.0" layoutY="86.0" mnemonicParsing="false" onAction="#clearEnter" prefHeight="30.0" prefWidth="40.0" text="CE">
+        <Button fx:id="btn_ce" layoutX="111.0" layoutY="85.0" mnemonicParsing="false" onAction="#clearEnter" prefHeight="30.0" prefWidth="40.0" text="CE">
             <font>
                 <Font size="14.0" />
             </font>
